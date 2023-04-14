@@ -1,1 +1,13 @@
-18
+File paths
+
+Absolute : relative to root of computer
+Relative : direct name or relative 
+generally direct names doesnot work 
+use ./abc.jpg to access elements within parent folder
+use ../ to go more up folder
+
+-----------------25--------------------
+
+Webpages
+ 
+
