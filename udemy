@@ -9,5 +9,88 @@ use ../ to go more up folder
 -----------------25--------------------
 
 Webpages
- 
 
+------------------31-------------------
+
+CSS
+cascade : waterfall
+stylesheets let us design web pages
+some are : Sass less etc
+
+earlier we had limited designing stuff using html
+
+later w3consrtium introduced html 3.2 with tags such as <font>, <center>
+attributes such as face size color
+we no longer use these
+ 
+hakom won lee - father of css 
+
+-------------------32---------------------
+
+1. Inline
+<tag style="property:value">
+for testing or single line usage else not recommended
+
+2. Internal
+<head>
+    <style>
+        selector{
+            property : value;
+        }
+    </style>
+</head>
+good for single webpage
+
+
+3. External
+
+save file as name.css
+selector{
+    property : value;
+}
+
+further 
+link it using -
+
+<head>
+    <link rel="stylesheet" href = "./name.css"/>
+</head>
+ 
+this is used mostly
+
+-------------------33---------------------
+
+1. Element selector 
+for eg
+
+h2{
+    color:blue;
+}
+
+but if we have multiple h2 then we cant control each 
+hence what came is 
+
+2. Class selector
+
+<h2 class = "abc"> hii </h2>
+.abc{
+    property:value;
+}
+
+we can have different tags under same class
+
+
+3. ID sekector
+
+<h2 id = "xyz"> hii </h2>
+#xyz{
+    property:value;
+}
+
+for single elemwnts  
+
+4. Attribute selector
+
+tag[attribute="value"]{
+    color:red
+}
