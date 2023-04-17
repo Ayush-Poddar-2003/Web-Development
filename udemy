@@ -94,3 +94,29 @@ for single elemwnts
 tag[attribute="value"]{
     color:red
 }
+
+-----------------34----------
+
+PROJECTS ....
+
+------------------- 33 36 37---------------------
+
+HEX CODES FOR COLORS
+COLORHUNT WEBSITE 
+for matching pair of colors
+
+-------------------38-----------------------
+
+1 px = 1/96th of inch = 0.26mm
+1 pt = 1/72nd of inch = 0.35mm
+
+ms word uses point for size
+
+1 em = relative size if parent increases it also increases
+1 rem = relative size if root increases it also increases parent doesnot affect it
+
+font-family
+text align
+
+-------------------39-----------------------
+
