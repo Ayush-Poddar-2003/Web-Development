@@ -119,4 +119,83 @@ font-family
 text align
 
 -------------------39-----------------------
+tables should only use to store data
+for layous :-------------------
 
+after table people started using display : inline-block
+further position:absolute
+
+then came float not preferred use only for images
+
+display:flex
+to use it put all div in one container 
+and the set its display:flex
+
+    .abc{
+        display:flex;
+        gap:10px;
+    }
+
+everything inside this container becomes inline in nature and contaier itself becomes block
+to make container inline use
+
+    .abc{
+        display:flex;
+        gap:10px;
+    }
+
+rest check project 
+
+-----------------54---------------------
+
+flex-direction : row {by default}
+this means elemts will be arranged in a single row
+flex basis:10px here will increase/decrease width of elements {NOT USED FOR CONTAINER INSTEAD TARGET CHILD}
+
+if flex-direction: column {in columns }
+flex basis:10px here will increase/decrease height of elements
+
+-----------------55---------------------
+
+always using flexbox make sure wheter it affects container or the child Element
+cheatsheet : https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+1. order:0 {by default}
+for rearragement set their orders and they will re-arrange
+
+2. flex-wrap:nowrap {by default parent property}
+this makes sure no matter what everything will be in single row
+to wrap element to next row use
+flex-wrap:wrap;
+
+eg : https://appbrewery.github.io/flex-layout/
+
+3. justify-content:flex-start;{parent property}
+uses row , to align everything to left
+justify-content:flex-start;
+to align everything to right
+justify-content:center;
+to makae everything to come to center
+more values like space-evenly etc check eg
+
+4. align-items:flex-start;
+uses column, for different posititons
+check e.g.
+
+all above were container properties
+
+5. align-self: for child targeting
+
+6. align-content:center;{only can be used if flex-wrap is set to wrap}
+
+-----------------56----------------------------
+
+how elements shrinks upon resizing window
+
+max/min/height/weight > flex-basis > Width > Content-Width
+
+if we decrease the window size , element will start getting stacked till it reach min width
+
+min width : eqaual to largest word
+max width : equal to longest possible line
