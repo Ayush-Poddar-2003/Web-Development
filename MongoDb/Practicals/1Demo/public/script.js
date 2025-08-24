@@ -1,0 +1,1 @@
+alert('Aur bhyi lodu')
