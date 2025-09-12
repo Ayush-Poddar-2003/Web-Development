@@ -1,7 +1,7 @@
-# useEffect Hook
+# <center>useEffect Hook
 
 - Remove side effect from components (Below eg)**
-- Use to fetch data from API
+- Also used to fetch data from API
 - Used as life cycle methods, DOM Manipulation
 ---
 SYNTAX -
@@ -66,7 +66,3 @@ function App()
 }
 export default App;
 ```
-
-# HANDLING
-
-![alt text](image-1.png)

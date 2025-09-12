@@ -1,8 +1,8 @@
-# PROPS 
-Props (short for properties) are read-only inputs passed from a parent component to a child component.
+# <center>PROPS 
+Props (short for properties)  
+Read-only inputs passed from a parent component to a child component.
 
 ```jsx
-// App.jsx se we can send inputs
 function App(){
   return(
       <User name="Ayush Poddar" age="22" /> 

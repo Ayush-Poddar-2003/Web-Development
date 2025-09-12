@@ -1,13 +1,11 @@
-# IMPORT EXPORT
+# <center>IMPORT EXPORT
 
 We shouldn't make every component in a single file.  
-We can, but not feasible and professional, imagine 1000s of lines of code.
+We can, but not feasible and professional.
 
 ---
 #### EXPORTING -
 ```jsx
-//CustomComponent.jsx in src folder
-
 //Method 1 to export
 function Custom(){
     return(
@@ -45,15 +43,4 @@ function App() {
 }
 
 export default App;
-```
-
-```jsx
-// main.jsx
-import App from './App.jsx'
-
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
 ```

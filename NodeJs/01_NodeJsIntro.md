@@ -1,13 +1,13 @@
-# Node Js
+# <center>Node Js Introduction
 
-Programming language ❌, Framework ❌, Library ❌  
-Run time environment for Js.
+## What ?
+Open source, cross platform, runtime evironment for executing js outside browser
 
-Earlier Js can only be run on chrome,  
-Also DOM manipulation can be done only on websites hence browser was needed, To be specific V8 engine   
+### Why to build from scratch ?
+Google took chrome's V8 engine(written in c++) + Backend features = NodeJs
 
-Hence, c++ -> V8 Engine -> NodeJs  
-It uses Google’s V8 engine to convert JS to machine code.
+#### What backend features added?
+- Non Blocking I/0
 
 ---
 INSTALLATION  

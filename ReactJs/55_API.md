@@ -15,6 +15,7 @@ API is Json data
 - POST : To store some data
 - PUT/PATCH : To update data
 - DELETE : To delete data
+---
 
 We will be given link of API, we have to first test that API  
 Either via PostMan or Thunder Client
@@ -71,3 +72,38 @@ function App() {
 export default App
 
 ```
+
+![alt text](image-9.png)
+
+---
+
+# <center> JSON SERVER
+For making custom API  
+
+Why not to make one using python/jave using database  
+=> Time Consuming
+
+https://github.com/typicode/json-server
+
+    npm install json-server
+
+create `fileName.json`
+
+```js
+{
+    "users":[
+        {
+            "Name":"Ayush",
+            "Age":22,
+            "Email":"ayush@.com"
+        },
+        {
+            "Name":"Aditi",
+            "Age":22,
+            "Email":"aditi@.com"
+        }
+    ]
+}
+```
+
+     npx json-server fileName.json

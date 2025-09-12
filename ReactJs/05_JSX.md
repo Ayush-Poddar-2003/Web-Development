@@ -1,10 +1,9 @@
-# JSX
+# <center>JSX
 JSX is syntax extension of Js, JavaScriptXML  
 Let us write html in js,  
 As earlier we had seprate html and seprate js file.
 
 ```jsx
-//Basic Component
 function Welcome()
 {
   const user = "Ayush";
@@ -22,10 +21,9 @@ React can work without JSX too,
 but complexity raises
 
 ## <center> RULES
-In JSX Camel case is uses  `onClick`  
+In JSX Camel case is used for eg  `onClick`  
 Use `className` Instead of `class`  
 JavaScript Expressions in `{curly braces}`  
-Return Statements in Arrow Functions
 
 ## <center> CURLY BRACES
 
@@ -52,13 +50,9 @@ function App()
   return (
     <>
       <h3>{name}</h3>
-
       {callFun(60,9)}
-
       <button onClick = {()=>fruit("Apple")}> Click Here </button>
-
       {obj.name}
-      
     </>
   )
 }

@@ -1,81 +1,50 @@
 
 ```html
 <!-- index.ejs -->
-<!DOCTYPE html>
-<html lang="en">
-<head><title>Document</title></head>
 <body>
-    <form action="/get-form-data"> //route
-        <input 
-            type="text"
-            placeholder="Enter UserName"
-            name="UserName" //name to display with obj
-        >
-        <input 
-            type="text"
-            placeholder="Enter Email"
-            name="Email"
-        >
-        <input 
-            type="password"
-            placeholder="Enter password"
-            name="Password"
-        >
-        <button>Submit Form</button>
+    <form action="">
+        Name : <input type="text" name="text" placeholder="Enter Your Name"><br><br>
+        Mail : <input type="email" name="email" placeholder="Enter Your Mail"><br><br>
+        <input type="submit" value="submit">
     </form>
 </body>
-</html>
+```
+![alt text](image-10.png)
+
+Issue is you can see data sent on the address bar
+
+---
+```html
+<body>
+    <form action="/form-submit" method="POST">
+        Name : <input type="text" name="text" placeholder="Enter Your Name"><br><br>
+        Mail : <input type="email" name="email" placeholder="Enter Your Mail"><br><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
 ```
 ```js
-const express = require('express');
+import express from 'express'
 const app = express();
 
-app.set('view engine', 'ejs');
+app.use(express.urlencoded({extended:true}))
 
 app.get('/', (req, res)=>{
-    res.render('index');
+    res.render('index.ejs')
 })
 
-app.get('/get-form-data', (req,res)=>{
-    console.log(req.query);
-    res.send('data received')
+//Using Post
+app.post('/form-submit', (req, res)=>{
+    res.json({
+        message: 'Form Submitted',
+        success: true
+    })
 })
 
-app.listen(3000);
-```
-![alt text](image-1.png)
-![alt text](image.png)
----
-![alt text](image-2.png)
----
-But using get will display all data on url, therefore we use post
-
-POST : Frontend -> server  
-GET : VIce versa
-
----
-Where all we need to make changes
-
-```html
-<form action="/get-form-data" method="post">
-```
-```js
-app.post('/get-form-data', (req,res)=>{
-    console.log(req.body);
-    res.send('data received')
-})
-```
-![alt text](image-4.png)
-![alt text](image-3.png)  
-![alt text](image-5.png)
-
----
-
-To see data inside undefined use
-```js
-//use built in middlewares
-app.use(express.json())
-app.use(express.urlencoded({extended:true}))
+const port = 3000;
+app.listen(port, ()=>console.log(`Server started on port ${port}`));
 ```
 
-![alt text](image-6.png)
+Now on clicking submit button you will recieve 
+
+![alt text](image-11.png)

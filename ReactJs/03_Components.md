@@ -4,8 +4,6 @@ A JavaScript function that returns JSX
 Same like function, but name starts with **Capital** letter
 
 ```jsx
-// App.jsx
-
 function Welcome(){ 
   return(
     <div>
@@ -17,8 +15,6 @@ export default Welcome;
 ```
 You can then render this inside your main.jsx:
 ```jsx
-//main.jsx
-
 //Any name but location should be correct
 import Apple from './App.jsx'  
 
@@ -35,14 +31,11 @@ function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
 ```
-#### 1.2. Arrow Function Component
-```JSX
-const Welcome = () => <h1>Hello</h1>;
-```
+
 
 ---
 ### 2. Class Component (Older)
-A class component must include the **extends** `React.Component` statement.  
+A class component must include the **extends** `React.Component`  
 Also requires a `render()` method, that returns HTML.
 ```jsx
 class Welcome extends React.Component {

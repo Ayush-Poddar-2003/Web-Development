@@ -10,7 +10,8 @@ React Native - for Mobile Apps
 ---
 **HOW IT WORKS?**  
 Creates virtual DOM  
-Only changes what needs to be changed as previously, DOM used to refresh the whole webpage
+Only changes what needs to be changed as previously,  
+DOM used to refresh the whole webpage
 
 ---
 React Porject Essentials -
