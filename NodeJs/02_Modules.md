@@ -13,22 +13,7 @@ This will add
 - package-lock.json
 - package.json : contains meta data
 
----
-For eg    
-https://www.npmjs.com/package/cat-me
 
-    npm i cat-me
-
-```js
-// script.js
-
-const catMe = require('cat-me')
-// it will bring js code from
-// node_modules -> cat-me -> index.js
-
-// Read Documentation
-console.log(catMe())
-```
 
 # <center> MODULES
 Other name to function

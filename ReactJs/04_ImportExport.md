@@ -4,9 +4,9 @@ We shouldn't make every component in a single file.
 We can, but not feasible and professional.
 
 ---
-#### EXPORTING -
+#### Method 1 -
 ```jsx
-//Method 1 to export
+// app.jsx
 function Custom(){
     return(
         <div>
@@ -15,7 +15,11 @@ function Custom(){
     )
 }
 export default Custom; 
+
+//main.jsx
+import Custom form "./App.jsx"
 ```
+#### Method 2 -
 ```JSX
 //Method 2 direct
 export function Custom2(){
@@ -25,22 +29,18 @@ export function Custom2(){
         </div>
     )
 }
-```
 
----
-#### IMPORTING -
+//main.jsx
+import {Custom2} from  "./App.jsx"
+```
+Use default export for primary component, one default at a time
+
+
+Imagine file having both above 2 components -
 ```jsx
 //App.jsx
 import Custom, {Custom2} from "./CustomComponent";
-
-function App() {
-  return(
-    <div>
-      <Custom/>
-      <Custom2/>
-    </div>
-  )
-}
-
-export default App;
+//Custom -> default exported
+//Custom2 -> Normal exported
 ```
+You can export variables, functions anythin...

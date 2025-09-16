@@ -12,18 +12,24 @@ function Welcome(){
   );
 }
 export default Welcome;
+// We always need a wrapper inside return.
 ```
 You can then render this inside your main.jsx:
 ```jsx
 //Any name but location should be correct
-import Apple from './App.jsx'  
+import App from './App.jsx'  
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Apple />   
+    <App />   
   </StrictMode>,
 )
 ```
+### FUNCTION Vs COMPONENT
+Component can return html code too
+
+
+---
 ## <center> TYPES
 ### 1. Functional Component (Modern & preferred)
 ```JSX
