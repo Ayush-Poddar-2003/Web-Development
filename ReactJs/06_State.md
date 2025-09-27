@@ -1,5 +1,3 @@
-# <center>useSTATE
-
 ```jsx
 function App() 
 {
@@ -40,7 +38,7 @@ function App()
   const [fruit, setFruit] = useState("Apple"); //default = Apple
 
   const changeFruit = () => {
-    setFruit = "Banana"; //Any changes on 2nd
+    setFruit("Banana"); //Any changes on 2nd
   }
 
   return (
@@ -53,7 +51,7 @@ function App()
 export default App
 ```
 
-OTHER EXAMPLE
+OTHER EXAMPLE -
 
 ```JSX
 import { useState } from "react";
@@ -66,7 +64,7 @@ const Counter = () => {
   return(
     <div>
       <h1>Counter : {count} </h1>
-      <button onClick={()=> setCount(count+1)}> Increase </button>
+      <button onClick={()=>setCount(count+1)}> Increase </button>
 
       <h1>Reverse Counter : {rCount} </h1>
       <button onClick={()=> setrCount(rCount-1)}>Decrease </button>

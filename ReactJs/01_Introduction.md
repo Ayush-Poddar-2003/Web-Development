@@ -56,5 +56,6 @@ RC - Release Candidate : Almost ready for final release
 Open Project Folder -> Open Package.json -> Check Dependancies
 
 **TO UPGRADE -**  
+Either direct changes in dependencies or
 Open root folder in terminal  
 Run `npm install react@rc react-dom@rc` 

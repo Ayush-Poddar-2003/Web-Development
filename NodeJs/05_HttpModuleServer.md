@@ -1,14 +1,15 @@
 # Creating a Server
+Server provides services, resources, data to other computers called clients.  
+To communicate b/w client and server a protocol is followed called http.
 
 ```js
 import http from 'http'
 
 const server = http.createServer((req, res)=>{
-    res.end("Request made");
+    res.end("Server Created");
 });
-const port = 3000;
 
-server.listen(port, ()=>console.log("Server is running"));
+server.listen(3000);
 ```
 
 
