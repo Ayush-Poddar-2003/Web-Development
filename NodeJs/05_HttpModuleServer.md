@@ -10,14 +10,11 @@ const server = http.createServer((req, res)=>{
 });
 
 server.listen(3000);
+// Search for `localhost:3000` on browser
 ```
 
 
 
-Port ?  Entry/exit point for data  
-Search for `localhost:3000` on browser
+Port ?  
+Entry/exit point for data  
 
----
-
-`res.write()` - Write data to response  
-`res.end()`   - End response (can send data too) 

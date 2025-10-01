@@ -1,7 +1,7 @@
 # PATH MODULE
 
 ```js
-import path form 'path
+import path form 'path'
 
 // 1 : Joining 2 or more files
 const fullPath = path.join('/folder', 'file1.py', 'file2.py');

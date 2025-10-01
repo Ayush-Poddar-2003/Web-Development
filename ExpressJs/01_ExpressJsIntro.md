@@ -3,9 +3,9 @@ It is a npm package, so setup same as any other package
 
     npm i express
 
+#### Creating a basic server
 ```js
 import express from 'express'
-
 const app = express();
 
 app.get('/',(req, res)=>{
