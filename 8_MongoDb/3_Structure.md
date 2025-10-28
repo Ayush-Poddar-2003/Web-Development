@@ -44,7 +44,7 @@ We keep sensitive information.
     npm i dotenv
 
 ```env
-MONGODB_URL="mongodb+srv://ayush069poddariitm_db_user:ayush123@cluster0.ql1sxlk.mongodb.net/VirtualCode"
+MONGODB_URL="fgsdfgd"
 ```
 
 ```js
