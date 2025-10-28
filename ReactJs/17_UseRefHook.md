@@ -1,34 +1,52 @@
-# useRef Hook
 
-To control and manipulate HTML DOM
-
----
 ```jsx
-import { useRef } from "react";
+import React, { useEffect, useRef, useState } from 'react'
 
-export default function App(){
+const App = () => {
+  let [count, setCount] = useState(0)
+  let num = useRef(0);
 
-  const inputRef = useRef(null);
+  useEffect(()=>{
+    setCount(count+1)
+  })
 
-  const inputHandler = () =>{
-    inputRef.current.focus();
-  }
-  
-  return(
-    <div>
-      <h1>UseRef Demo</h1>
-      <input ref={inputRef} type="text" placeholder="Enter your name : "/>
-      <button onClick={inputHandler}>Focus changed to field on clicking</button>
-    </div>
+  return (
+    <>
+      <h1>{count}</h1>
+      <h1>{num.current}</h1>
+      <button onClick={()=>setCount(count+1)}>1 Button</button>
+    </>
   )
 }
+ 
+export default App
 ```
-![alt text](image-5.png)  
-As we click on button placeholder highlights  
-![alt text](image-6.png)
+Keeps on infinite loop ![alt text](image-18.png)
 
 ---
-Inside inputHandler Function -  
-`inputRef.current.style.color='red';`
+What if we want to render once
 
-![alt text](image-7.png)
+```jsx
+import React, { useEffect, useRef, useState } from 'react'
+
+const App = () => {
+  let [count, setCount] = useState(0)
+  let num = useRef(0);
+
+  useEffect(()=>{
+    num.current += 1
+  })
+
+  return (
+    <>
+      <h1>{count}</h1>
+      <h1>{num.current}</h1> //This also gets changed on state change
+      <button onClick={()=>setCount(count+1)}>1 Button</button>
+    </>
+  )
+}
+ 
+export default App
+```
+
+when button is pressed once

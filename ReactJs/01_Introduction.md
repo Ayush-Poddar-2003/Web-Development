@@ -1,18 +1,62 @@
-# <CENTER>INTRODUCTION
+# <CENTER> INTRODUCTION
 
 **WHAT IS REACT ?**  
-Open source Js **library** for building UI,  
+Open source Js **library**,  
 Developed by Facebook SDE **Jordan Walke** (2013),  
 Got Open Sourced in 2015.   
 
-Fast coz of virtual DOM, High demand, Large community
 
 React Native easily can be learnt after - for Mobile Apps
 
 **HOW IT WORKS?**  
 Creates virtual DOM  
 Only changes what needs to be changed as previously, DOM used to refresh the whole webpage
-  
+
+---
+### JS vs React
+```js
+//Using Js
+
+//index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+//script.js
+let h1 = document.createElement("h1")
+h1.innerHTML = "Virtual Code"
+document.getElementById("root").appendChild(h1)
+```
+![alt text](image-12.png)
+
+Now using react
+
+```js
+
+<body>
+    <div id="root"></div>
+    <!--Importing react via CDN-->
+    <script crossorigin src= "https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src= "https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+
+//script.js
+let h1 = React.createElement('h1', null, "Hello") //element created
+ReactDOM.createRoot(document.getElementById("root")).render(h1)
+// creating route to append above element in html
+```
+
+
 ---
 React Project Essentials -
 - Vite  

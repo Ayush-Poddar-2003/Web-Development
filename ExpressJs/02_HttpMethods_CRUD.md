@@ -1,8 +1,8 @@
 # CRUD
 
-C : Create => **POST** : To send data to server, Add new data, Eg Form  
-R : Read => **GET** : To retrieve data from server
-U : Update => **PUT** : To update an existing record
+C : Create => **POST**, To send data to server, Add new data, Eg Form   
+R : Read => **GET**, To retrieve data from server  
+U : Update => **PUT** : To update an existing record  
 D : Delete => **DELETE** : To delete a resource
 
 ---

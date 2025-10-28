@@ -1,8 +1,8 @@
 # HOOKS
 Introduced after React 16.8.  
-Older react used class-based components but now functional.  
+Older react used class-based components but now functional are used.  
 
-To achieve state, lifecycle, other features like class componenents in functional components, we use hooks.
+To achieve state, lifecycle, other features of class componenents in functional components, we use hooks.
 
 Popular Hooks :- 
 
@@ -15,5 +15,7 @@ Popular Hooks :-
 ---
 ### Common stuff -
 1. Starts with `useHookname`
-2. Used inside functional component
-3. Always on top, not inside any if or sub block
+2. Always used with functional component
+3. Always on top, not inside any (if, sub block, brackets)
+
+
