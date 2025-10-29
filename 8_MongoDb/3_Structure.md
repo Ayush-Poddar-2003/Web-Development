@@ -1,3 +1,5 @@
+
+```
 backend/
 │
 ├── src/
@@ -35,7 +37,7 @@ backend/
 ├── .gitignore
 ├── package.json
 └── README.md
-
+```
 ---
 
 ## 1) .env file

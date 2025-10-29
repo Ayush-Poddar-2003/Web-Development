@@ -1,9 +1,7 @@
 # MIDDLEWARE
 Between client and server, request passes via middleware, it can either reject or approve the request.  
 
-For eg  
-`app.use(express.json()) //Builtin`
-`app.use(cors()) //Third party`  
+
 
 ---
 CUSTOM MIDDLEWARE

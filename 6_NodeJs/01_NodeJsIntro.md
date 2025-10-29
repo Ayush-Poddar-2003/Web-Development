@@ -28,7 +28,9 @@ TO RUN OUR JS FILE
     node fileName
 
 ---
-In react like we just have to write `npm run dev` no need to mention specific file name, here too we can by changing script in dependencies
+In react like we just have to write `npm run dev`  
+No need to mention specific file name, here too we can  
+by changing script in dependencies
 ```json
 {
   "scripts": {
@@ -53,6 +55,6 @@ If we use `node fileName.js`, it doesn't show changes if made in code, we have t
 
     npm i nodemon -g //installing globally
     
-`nodemon fileName.js`
+    nodemon fileName.js
 
 This will auto reload server if changes are made

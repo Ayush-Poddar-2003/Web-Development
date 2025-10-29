@@ -25,10 +25,11 @@ Two ways - Offline S/W & Online(Recommended)
 Go to official website -> Products -> Atlas  
 https://www.mongodb.com/products/platform  
 
-**MONGOOSE ?**
+---
+**MONGOOSE ?**  
 Library that connects mongodb & our backend
 
-1. Setup mongoDB
+1. Setup mongoDB online
 2. Install mongoose
 3. Connect Db with our server
 4. Design schema
@@ -37,9 +38,9 @@ Library that connects mongodb & our backend
 Detailed Steps -
 1. Create new project on mongoDB & fill details https://cloud.mongodb.com/v2#/org/68a96e411b63e343cdf6d4e0/projects
 2. Setup Express Server & Install mongoose `npm i mongoose`
-3. Connecting our Db with server
--> Click create cluster, Fill details, click create deployment
--> It will generate username and password
+3. Connecting our Db with server online   
+-> Click create cluster, Fill details, click create deployment  
+-> It will generate username and password  
 -> Below click Create database user  
 -> Click Choose a connection method  
 -> mongoDB for Vs Code  

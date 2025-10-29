@@ -3,9 +3,11 @@
 import React from 'react'
 import axios from 'axios'
 
-function App() {
+function App() 
+{
 
-  async function getRes() {
+  async function getRes() 
+  {
     axios.get("http://localhost:8000/")
     .then((e)=>{
       console.log(e);
@@ -27,4 +29,5 @@ export default App
 
 ![alt text](image-20.png)
 
+---
 ### CORS Particular request

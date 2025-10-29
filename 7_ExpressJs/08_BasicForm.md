@@ -1,6 +1,3 @@
-
-
-
 ### <CENTER> FRONTEND
 ```JSX
 import axios from "axios";
@@ -12,7 +9,8 @@ function App() {
   let [userAge, setUserAge] = useState("")
   let [userCity, setUserCity] = useState("")
 
-  async function getRes(){
+  async function getRes()
+  {
     //Sending data to backend
     axios.post("http://localhost:8000/", {
       userName: userName,

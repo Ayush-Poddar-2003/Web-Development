@@ -1,3 +1,13 @@
+# RESTful API
+Representational state transfer   
+
+Way for applications to communicate with each other over internet using standard HTTP requests like GET, POST, PUT, DELETE
+
+We dont send request in html format as it might wont work with moblie applications  
+We do send them in json format 
+
+This json data is brought by RESTful API (Application progam interface)
+
 # CRUD
 
 C : Create => **POST**, To send data to server, Add new data, Eg Form   

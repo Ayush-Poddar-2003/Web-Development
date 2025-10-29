@@ -11,11 +11,12 @@ Wrapper around a MongoDB collection that gives you an interface to interact with
 ---
 ### <center> OPERATIONS ON DATABASE USING SERVER
 
-Go to cluseters tab -> Browse Collections
+
 
 
 ```js
-//user.model.js
+//user.model.js file
+
 import mongoose from "mongoose";
 
 //Designing a schema
@@ -41,13 +42,15 @@ const userSchema = new mongoose.Schema({
 },{timestamps:true})
 
 //Creating a model
+//const ModelName = mongoose.model("ModelName", SchemaName)
 const User = mongoose.model("User", userSchema)
-// const ModelName = mongoose.model("ModelName", SchemaName)
 
 export default User;
 ```
 ![alt text](image-8.png)
-## CREATE
+
+
+## <center>CREATE
 Open thunderclient -> Add URL -> Select POST -> Body
 
 ![alt text](image-2.png)

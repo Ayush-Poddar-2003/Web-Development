@@ -1,24 +1,17 @@
-# RESTful API
-Representational state transfer   
-Way for applications to communicate with each other over internet using standard HTTP requests like GET, POST, PUT, DELETE
-
-We dont send request in html format as it might wont work with moblie applications  
-We do send them in json format 
-
-This json data is brought by RESTful API (Application progam interface)
-
----
-Let's connect our frontend with backend  
+Let's connect our frontend with backend,  
 Displaying backend data on frontend
 
 ```js
 // app.jsx (frontend)
+// localhost:8000 ie. backend stores {'name':"ayush", "age":21}  
 
 const App = () => {
 
   //Fetching data from URL
-  async function getRes() {
+  async function getRes() 
+  {
     const res = await fetch("http://localhost:8000/")
+
     //Converting it into json format
     let data = await res.json();
     console.log(data);
@@ -32,17 +25,15 @@ const App = () => {
 } 
 
 export default App
-
-// localhost:8000 stores {'name':"ayush", "age":21}  
 ```
 
 But on clicking button -> Error
 ![alt text](image-16.png)
 
----
+
 ## <center> CORS?
 Cross origin resource sharing.  
-A security feature in browser that prevents different requests from different origins unless explicitly allowed by the browser.  
+A security feature in browser that prevents different requests from different origins unless explicitly allowed by the server.  
 cors is also a middle ware.
 
 `npm i cors`

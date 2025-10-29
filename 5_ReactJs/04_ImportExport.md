@@ -1,10 +1,9 @@
 # <center>IMPORT EXPORT
 
 We shouldn't make every component in a single file.  
-We can, but not feasible and professional.
 
 ---
-#### Method 1 -
+#### <center>- Method 1 -
 ```jsx
 // app.jsx
 function Custom(){
@@ -15,13 +14,18 @@ function Custom(){
     )
 }
 export default Custom; 
-
-//main.jsx
+```
+We can export multiple components from single file  
+`default` => Main component, one default at a time
+```jsx
+// Importing in any other file
 import Custom form "./App.jsx"
 ```
-#### Method 2 -
+---
+#### <center>- Method 2 -
 ```JSX
-//Method 2 direct
+//export direct
+
 export function Custom2(){
     return(
         <div>
@@ -29,16 +33,15 @@ export function Custom2(){
         </div>
     )
 }
-
-//main.jsx
-import {Custom2} from  "./App.jsx"
 ```
-Use default export for primary component, one default at a time
-
-
-Imagine file having both above 2 components -
 ```jsx
-//App.jsx
+import {Custom2} from  "./App.jsx" //Remember {}
+```
+---
+#### <center> Exporting multiple components
+
+Imagine Single file having 2 components -
+```jsx
 import Custom, {Custom2} from "./CustomComponent";
 //Custom -> default exported
 //Custom2 -> Normal exported

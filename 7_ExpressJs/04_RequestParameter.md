@@ -1,8 +1,8 @@
+Since we dont have database rn, let's use array :-
 ```js
 import express from 'express'
 const app = express()
 
-//Since we dont have database rn
 let users = [
   {
     "id": 1,
@@ -50,21 +50,19 @@ app.listen(3000, ()=>{
 })
 ```
 
-![alt text](image-12.png)
-
 ---
 
-### <center> Request Parameters ?
+# <center> Request Parameters ?
+Dynamic routing,   
+after **:** in our URL, is treated as variable
 
 ```js
-// Dynamic routing, after : it is treated as variable
-
-app.get('/users/:id', (req, res)=>
+app.get('/users/:cid', (req, res)=> //cid is variable
 {
-    let id = req.params.id //Now id will store value from above 
+    let cid = req.params.cid //Now id will store value from URL 
     
     //Checking if that id is present above in array 
-    let existingUser = users.find((it)=>(it.id==id))
+    let existingUser = users.find((it)=>(it.cid==id))
     
     if(!existingUser){
         return res.send("404 Not Found")
