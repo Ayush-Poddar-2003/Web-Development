@@ -41,6 +41,14 @@ console.log(typeof(Infinity));
 console.log(-5 / 0); // -Infinity
 console.log(typeof(-Infinity));
 ```
+```js
+let a = "33a"
+console.log(typeof a) //string
+let b = Number(a)
+console.log(typeof a) //number
+console.log(a)        //NaN
+```
+
 
 ## <center>3. BigInt
 ```js
