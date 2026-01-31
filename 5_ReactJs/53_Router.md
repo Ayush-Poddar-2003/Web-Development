@@ -1,74 +1,80 @@
-# ROUTER
-Latest router version 7.8.2  
-Official Website : https://reactrouter.com/home
+# REACT ROUTER
 
-To make pages
+**WHAT ?**  
+To make pages for different URLs
+
+Official Website : https://reactrouter.com/home   
+Latest version 7.9.5  
+
+It has both framework & Library options to setup.  
+Better to go with library for reactjs
 
 ---
+SETUP :-
 
     npm i react-router
 
-To check wheter working or not
-in main.jsx
-
 ```jsx
-import { BrowserRouter } from 'react-router'
+//main.jsx
+
+import { BrowserRouter } from 'react-router' //import
 ..
 ..
-  <BrowserRouter>  
+  <BrowserRouter>  //wrap
     <StrictMode>
       <App />
     </StrictMode>,
   </BrowserRouter>
 ..
-// You can remove strict mode too
+// You can remove <StrictMode> too
 ```
-
-Practical
+---
+### <center> DEMO
 
 ```jsx
-import { Routes, Route, Link } from "react-router"
-import { Home } from "./Home"
-import { About } from "./About"
- 
- function App() {
+//App.jsx
 
+import {Routes, Route} from 'react-router'
+import Page1 from './Page1'
+import Page2 from './Page2'
+
+const App = () => {
   return (
-    <div>
-      
-      <Link to='/'>Click to go to Home</Link> <br></br>
-      <Link to='/about'>Click to go to About</Link>
-
+    <>
       <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/about' element={<About/>}/>    
-      </Routes>      
-
-    </div>
+        <Route path="/page1" element={<Page1/>} />
+        <Route path="/page2" element={<Page2/>} />
+      </Routes>
+    </>
   )
 }
 
 export default App
 ```
 
-![alt text](image-10.png)
-
+![alt text](image-25.png)![alt text](image-26.png)
 ---
-### BrowserRouter ?
-Enables client side routing using browser history API
-- Browser side routing : Path changes but leads to complete refresh of page, eg NASA 
-- Client side routing : Path changes but page doesn't refresh
 
-We have to create wrapper of BrowserRouter
 
----
-### Routes ?
-Tells which page on which path
 
----
-### Route ?
-Makes component as a page  
-`<Route path='/  element={<App/>}`
+
+
+### <CENTER>THEORY
+
+**1. BrowserRouter ?**  
+A Component that Enables, client side routing (Path changes but page doesn't refresh), using **browser history** API.  
+We have to create wrapper of BrowserRouter to use it.
+
+**2. Routes ?**  
+Tells which page on which Route(URL)
+
+**3. Route ?**  
+Makes a component as a page  
+```jsx
+<Routes>
+  < Route path='/' element = { <App/> }
+</Routes>
+```
 
 ---
 ### Link ?

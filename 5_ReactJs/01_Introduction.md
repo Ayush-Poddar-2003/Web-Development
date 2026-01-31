@@ -2,12 +2,17 @@
 
 **WHAT IS REACT ?**  
 Open source Js **library**,  
+
+**Library**: You call function, like a toolbox — you pick tools when needed    
+**Framework**: decides when your code runs, You follow its rules and structure
+
 Developed by Facebook SDE **Jordan Walke** (2013),  
 Got Open Sourced in 2015.   
 
 
 React Native easily can be learnt after - for Mobile Apps
 
+---
 **HOW IT WORKS?**  
 Creates virtual DOM  
 Only changes what needs to be changed as previously, DOM used to refresh the whole webpage

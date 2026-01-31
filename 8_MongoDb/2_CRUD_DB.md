@@ -6,7 +6,18 @@ Go to your IP Access list, Delete pre existing, Add new and allow access to ever
 Defines structure of document (Single Record)
 
 **MODEL ?**  
-Wrapper around a MongoDB collection that gives you an interface to interact with your data
+Models = your database structure.  
+**What fields exist ?**  
+Example: name, email, price, age  
+**What type each field is ?**  
+String, Number, Boolean, Date, Array, Object  
+**Which fields are required ?**  
+required: true  
+**Which fields must be unique ?**  
+unique: true
+
+Default values
+default: Date.now
 
 ---
 ### <center> OPERATIONS ON DATABASE USING SERVER

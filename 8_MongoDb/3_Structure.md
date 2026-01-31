@@ -69,7 +69,17 @@ mongoose.connect(process.env.MONGODB_URL)
 //user.routes.js
 ```
 
-## 4) Controllers
-```js
-//Functions of routes are kept here
-```
+### 4) Controllers
+
+In MERN, a controller is just the logic that runs when a specific API route is hit.
+
+Routes decide what URL,
+Controllers decide what happens.
+
+Controller = Functions that handle requests and send responses.
+
+They do things like:
+- Read data from the request
+- Validate it
+- Talk to the model (database)
+- Send the final response back

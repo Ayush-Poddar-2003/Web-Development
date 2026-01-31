@@ -1,26 +1,25 @@
-# <center> INTRODUCTION
-
-**TYPES OF DATABASE ?**
-1. SQL DB : MySQL, PostgreSQL
-2. NoSQL : MongoDB
-
----
-### <center> MONGODB ?
-NoSQL db that stores data in JSON like format.
+## MONGODB ?
+NoSQL database that stores data in JSON like format.  
+First released in 2009, developed by company called 10gen later named mongoDB.
 
 ![alt text](image.png)  
 
-CLUSTER : Entire MongoDB deployment  
-DATABASE : Container inside cluster  
-COLLECTION : Table inside  
-DOCUMENT : Single record of data in BJSON format  
+---
+### STRUCTURE ?
+- Cluster : Entire MongoDB deployment  
+- Database : Container inside cluster  
+- Collection : A Complete table 
+- Document : Single record of data in BJSON format, set of key value pairs  
 
 ![alt text](image-7.png)
 
+---
+### Installation :-
+
 Two ways - Offline S/W & Online(Recommended)
 
----
-## ATLAS (Online Cloud Version) Industry Level
+
+## (Online Cloud Version) ATLAS-Industry Level
 
 Go to official website -> Products -> Atlas  
 https://www.mongodb.com/products/platform  
