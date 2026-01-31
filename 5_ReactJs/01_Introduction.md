@@ -1,10 +1,10 @@
 # <CENTER> INTRODUCTION
 
-### **WHAT IS REACT ?**  
+### **WHAT IS REACT JS ?**  
 Open source Js **library**,  
 
-**Library**: You call function, like a toolbox — you pick tools when needed    
-**Framework**: decides when your code runs, You follow its rules and structure
+**Library**: You call function, like a toolbox you pick tools when needed    
+**Framework**: It decides when your code runs, You follow its rules and structure
 
 Developed by Facebook SDE **Jordan Walke** (2013),  
 Got Open Sourced in 2015.   
@@ -13,19 +13,22 @@ Got Open Sourced in 2015.
 React Native easily can be learnt after - for Mobile Apps
 
 ---
+
 **HOW IT WORKS?**  
 Creates virtual DOM  
 Only changes what needs to be changed as previously, DOM used to refresh the whole webpage
 
 ---
+
 React Project Essentials -
-- Vite  
+- Vite ?  
 Recommended in Offical documentation  
 Super fast dev server & Build tool
 - NodeJs - LTS (Long term support)
 - Npm, Bun can also be used instead of npm as 29x faster
 
 ---
+   
 ### Our First React App
 
    Go to https://vite.dev/guide/ for steps
@@ -42,14 +45,23 @@ All above steps will add needed files for the App.
 Your project should now run on **localhost : 5173** (Vite’s default port).  
 5173 ~ VITE
 
+
+We can use online react too, Official Site  
+https://stackblitz.com/edit/vitejs-vite-jzwmmfrr?file=index.html&terminal=dev
+
 ---
 
 
 ### <center> WorkFlow
 index.html -> main.jsx -> App.jsx -> Other linked Components
-1. index.html : untouched
-2. main.jsx : Linking App.jsx
-3. App.jsx : Linking other components
+1. index.html : untouched, had div root, every code inside it
+
+   ![alt text](image-27.png)
+2. main.jsx : Linking App.jsx, to root div by getElelementById('root')
+
+   ![alt text](image-28.png)
+
+2. App.jsx : Linking other components
 
 
 ---
