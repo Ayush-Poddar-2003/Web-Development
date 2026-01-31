@@ -1,6 +1,6 @@
 # <CENTER> INTRODUCTION
 
-**WHAT IS REACT ?**  
+### **WHAT IS REACT ?**  
 Open source Js **library**,  
 Developed by Facebook SDE **Jordan Walke** (2013),  
 Got Open Sourced in 2015.   
