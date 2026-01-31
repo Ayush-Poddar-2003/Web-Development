@@ -1,20 +1,17 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
+import {Routes, Route} from 'react-router'
+import Page1 from './Page1'
+import Page2 from './Page2'
 
 const App = () => {
-  let [count, setCount] = useState(0)
-  let num = useRef(0);
-
-  useEffect(()=>{
-    num.current += 1
-  })
-
   return (
     <>
-      <h1>{count}</h1>
-      <h1>{num.current}</h1>
-      <button onClick={()=>setCount(count+1)}>1 Button</button>
+      <Routes>
+        <Route path="/page1" element={<Page1/>} />
+        <Route path="/page2" element={<Page2/>} />
+      </Routes>
     </>
   )
 }
- 
+
 export default App

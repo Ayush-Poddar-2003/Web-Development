@@ -1,5 +1,7 @@
 # PATH MODULE
-
+The path module is a built-in Node.js module used to:  
+Work with file and directory paths      
+Handle paths in a cross-platform way (Windows / Linux / macOS)
 ```js
 import path form 'path'
 

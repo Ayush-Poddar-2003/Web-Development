@@ -1,12 +1,31 @@
 # <center> Node Js Introduction
 
 **WHAT ?**  
-Open source, cross platform, runtime evironment for executing js outside browser.  
-Earlier Js was only used in browser and that too only for frontend.  
+Open source, cross platform, runtime evironment for executing js code outside browser.  
+Earlier Js was only used in browser and that too only for frontend tasks like validation, DOM manipulation.  
 
-Google took chrome's V8 engine(written in c++) + Backend features = NodeJs
+![alt text](image-4.png)
 
-Used to create web server.
+---
+#### <center>CLIENT SIDE VS SERVER SIDE SCRIPTING LANGUAGE ?
+### 1. Client-Side Scripting  
+Code runs on user’s browser (js)  
+Used for:
+UI interactions, Form validation, DOM manipulation
+**Limitations**: Cannot directly access: Databases, File systems, Server resources
+
+### 2. Server-Side Scripting
+
+Code runs on the server,  
+eg: PHP, Java, Python, Js (using Node.js)  
+These Can: Connect to databases, Access file systems, Handle authentication, Create APIs
+
+---
+### How Node.js Changes JavaScript ?
+
+Node.js converts JavaScript into a server-side scripting language by providing: Runtime environment & Built-in modules (fs, http, path, etc.)
+
+Now JavaScript can: Run outside browser, Act as backend language, Handle requests & responses
 
 ---
 **INSTALLATION ?**  
@@ -16,11 +35,12 @@ Node and npm will get installed
 Documentation : https://nodejs.org/docs/latest/api/
 
 ---
-## STARTING WITH OUR PROJECT
+## <center>STARTING WITH OUR PROJECT
 
-    npm init -y
+    npm init
 
-will add `package.json` in our project
+will add customised `package.json` in our project
+
 
 ---
 TO RUN OUR JS FILE  
@@ -37,7 +57,7 @@ by changing script in dependencies
     "test": "echo \"Error: no test specified\" && exit 1"
   },
 }
-// Chnage it to
+// Chnage above code to
 {
   "scripts": {
     "dev": "node fileName.js"

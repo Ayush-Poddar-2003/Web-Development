@@ -4,15 +4,16 @@ A JavaScript function that returns JSX
 Same like function, but name starts with **Capital** letter
 
 ```jsx
-function Welcome(){ 
+function App()
+{ 
   return(
     <div>
       <h1>Hey Buddy</h1>
     </div>
   );
 }
-export default Welcome;
-// We always need a wrapper inside return.
+
+export default App;
 ```
 You can then render this inside your main.jsx:
 ```jsx
@@ -25,11 +26,10 @@ createRoot(document.getElementById('root')).render(
   </StrictMode>,
 )
 ```
-### FUNCTION Vs COMPONENT
-Component can return html code too
 
 
----
+
+
 ## <center> TYPES
 ### 1. Functional Component (Modern & preferred)
 ```JSX
@@ -44,8 +44,10 @@ function Welcome(props) {
 A class component must include the **extends** `React.Component`  
 Also requires a `render()` method, that returns HTML.
 ```jsx
-class Welcome extends React.Component {
-  render() {
+class Welcome extends React.Component 
+{
+  render() 
+  {
     return <h1>Hello, {this.props.name}</h1>;
   }
 }
