@@ -1,6 +1,6 @@
 # <center> INTRODUCTION
 
-**HISTORY -**  
+### **HISTORY -**  
 Netscape Browser dominated internet 1990s before internet explorer,  
 At Netscape Office in 1995, **Brendan Eich** created  
 Mocha -> JavaScript  
