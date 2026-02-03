@@ -16,16 +16,17 @@ React Native easily can be learnt after - for Mobile Apps
 
 **HOW IT WORKS?**  
 Creates virtual DOM  
-Only changes what needs to be changed as previously, DOM used to refresh the whole webpage
+Only changes what needs to be changed,  
+DOM used to refresh the whole webpage.  
 
 ---
 
 React Project Essentials -
-- Vite ?  
+- **Vite** ?  
 Recommended in Offical documentation  
 Super fast dev server & Build tool
-- NodeJs - LTS (Long term support)
-- Npm, Bun can also be used instead of npm as 29x faster
+- **NodeJs** - LTS (Long term support)
+- Npm | Bun can also be used instead of npm as 29x faster
 
 ---
    
