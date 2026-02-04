@@ -11,7 +11,7 @@ JavaScript Expressions in `{curly braces}`
 
 ---
 ## <center> FUNCTIONS
-We have to **pass function definition** in curly braces, **Not just calling**
+
 
 ```jsx
 const App = () => {
@@ -37,6 +37,7 @@ When React sees this line, it executes callme() immediately — because of the p
 So before the button even appears on screen, your function runs once.
 
 React runs in Strict Mode (Check main.jsx).  
+![alt text](image-30.png)
 Strict Mode intentionally calls your functions twice during render not in production, but only in development   
 to help detect side effects and bugs.
 

@@ -1,6 +1,6 @@
 # <center> COMPONENTS ?
   
-A JavaScript function that returns JSX   
+It is a JavaScript function that returns JSX   
 Same like function, but name starts with **Capital** letter
 
 ```jsx
@@ -41,7 +41,8 @@ function Welcome(props) {
 
 ---
 ### 2. Class Component (Older)
-A class component must include the **extends** `React.Component`  
+A class component must include the   
+`extends React.Component`  
 Also requires a `render()` method, that returns HTML.
 ```jsx
 class Welcome extends React.Component 

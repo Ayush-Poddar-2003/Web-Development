@@ -15,7 +15,6 @@ function Custom(){
 }
 export default Custom; 
 ```
-We can export multiple components from single jsx file  
 
 `default` => Main component, one default at a time
 ```jsx
@@ -50,4 +49,5 @@ import Custom, {Custom2, otherComponents, ....} from "./CustomComponent";
 ```
 You can export variables, functions anythin...
 
-`export User = "Ayush"`, To import in other file `import {User} from './'`
+`export User = "Ayush"`,  
+To import in other file `import {User} from './'`
