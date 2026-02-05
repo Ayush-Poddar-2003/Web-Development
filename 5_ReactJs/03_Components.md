@@ -15,10 +15,10 @@ function App()
 
 export default App;
 ```
-You can then render this inside your main.jsx:
+Inside your main.jsx:
 ```jsx
-//Any name but location should be correct
 import App from './App.jsx'  
+//Any name but location should be correct
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
